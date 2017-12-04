@@ -7,6 +7,6 @@ The Prisoner's Dilemma is a long tested ethical question.  This app will examine
 "Each person ought to do whatever will best promote his or her own interests"
 
 ## The Social Contract Theory
-"The right thing to do is to follow te rules that rational, self-interested people would agree to follow for their mutual benefit"
+"The right thing to do is to follow the rules that rational, self-interested people would agree to follow for their mutual benefit"
 
 
