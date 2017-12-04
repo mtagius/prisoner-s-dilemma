@@ -1,0 +1,45 @@
+#mainContainer {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    border-width: 3px;
+	border-style: solid;
+	border-radius: 40px;
+	border-color: black;
+}
+@media only screen and (max-width: 500px) {
+    #mainContainer {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+	}
+}
+
+#containerHeading {
+    margin:  15px 40px 0px 40px;
+    font-size: 45px;
+}
+@media only screen and (max-width: 500px) {
+    #containerHeading {
+        font-size: 25px;
+    }
+}
+
+#containerDescription {
+    margin: 5px 20px 20px 20px;
+}
+
+.important {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.buttons {
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.buttons button {
+    width: 70%;
+}
