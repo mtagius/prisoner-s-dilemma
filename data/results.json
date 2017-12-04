@@ -1,0 +1,22 @@
+{
+    "ethicalEgoism": {
+        "playerBetrays": "1",
+        "playerSilent": "1",
+        "computerBetrays": "1",
+        "computerSilent": "1",
+        "totalYearsComputerBetray": "1",
+        "totalYearsComputerSilent": "1",
+        "totalYearsPlayerBetray": "1",
+        "totalYearsPlayerSilent": "1"
+    },
+    "socialContractTheory": {
+        "playerBetrays": "1",
+        "playerSilent": "1",
+        "computerBetrays": "1",
+        "computerSilent": "1",
+        "totalYearsComputerBetray": "1",
+        "totalYearsComputerSilent": "1",
+        "totalYearsPlayerBetray": "1",
+        "totalYearsPlayerSilent": "1"
+    }
+}
