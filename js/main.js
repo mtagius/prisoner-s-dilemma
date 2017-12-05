@@ -72,7 +72,7 @@ function loadResults() {
 
     $.get("html/results.html", function(data){
         $("#mainContainer").html(data);
-
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
         if(playerChoices[0] == "betray") {
             $("#eePlayer").html("You <span class='important'>Betrayed.</span>");
         } else {
