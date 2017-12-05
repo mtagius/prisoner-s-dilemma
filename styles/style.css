@@ -1,12 +1,26 @@
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
+    color: #363636;
+}
+
 #mainContainer {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 25%;
     width: 50%;
     border-width: 3px;
 	border-style: solid;
-	border-radius: 20px;
-	border-color: black;
+    border-color: #363636;
+    margin-bottom: 20px;
+    background-color: #E8E8E8;
+}
+@media only screen and (max-width: 1500px) {
+    #mainContainer {
+        left: 15%;
+        width: 70%;
+	}
 }
 @media only screen and (max-width: 500px) {
     #mainContainer {
@@ -18,20 +32,24 @@
 
 #containerHeading {
     margin:  15px 40px 0px 40px;
-    font-size: 45px;
+    font-size: 55px;
 }
 @media only screen and (max-width: 500px) {
     #containerHeading {
-        font-size: 25px;
+        font-size: 40px;
     }
 }
 
 #containerDescription {
-    margin: 5px 20px 0px 20px;
+    margin: 25px 20px 0px 20px;
 }
 
 #gameText {
     margin: 10px 20px 10px 20px;
+}
+
+#gamePopup {
+    margin: 0px 20px 30px 20px;
 }
 
 .important {
@@ -39,8 +57,14 @@
     font-style: italic;
 }
 
+.underline {
+    border-bottom: 2px solid #545454;
+    display: inline-block;
+    line-height: 1.5;
+}
+
 .button-containter {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 .buttons {
@@ -50,6 +74,7 @@
 
 .buttons button {
     width: 70%;
+    font-size: 20px;
 }
 
 #resultsContainer {
@@ -58,5 +83,10 @@
 }
 
 .item {
-    padding: 5px; 
+    padding: 10px; 
+}
+
+.explanation {
+    margin: 50px 10px 30px 10px;
+    text-align: left;
 }

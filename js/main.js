@@ -113,6 +113,10 @@ function ethicalEgoism(choice) {
     }
     game += 1;
     $("#gameText").html("Currently playing game <span class='important'>2 of 2.</span>");
+    if(playerChoices[0] == "betray") {
+        $("#gamePopup").html("You choose to <span class='important'>Betray.</span>  Make your move for the second game.");
+    } else {
+        $("#gamePopup").html("You choose to <span class='important'>Remain Silent.</span>  Make your move for the second game.");    }
 }
 
 function socialContractTheory(choice) {
