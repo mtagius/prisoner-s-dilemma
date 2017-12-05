@@ -4,6 +4,7 @@ playerChoices = ["", ""];
 computerChoices = ["", ""];
 playerYears = [0, 0];
 computerYears = [0, 0];
+timeout = false;
 
 function saveNewResults() {
     $.ajax({
@@ -103,6 +104,10 @@ function loadResults() {
 }
 
 function ethicalEgoism(choice) {
+    timeout = true;
+    setTimeout(function() {
+        timeout = false;
+    }, 1000);
     playerChoices[0] = choice;
     adverageYearsBetray = (parseInt(results.ethicalEgoism.totalYearsComputerBetray, 10) / parseInt(results.ethicalEgoism.computerBetrays, 10));
     adverageYearsSilent = (parseInt(results.ethicalEgoism.totalYearsComputerSilent, 10) / parseInt(results.ethicalEgoism.computerSilent, 10));
@@ -131,8 +136,8 @@ $(document).ready(function() {
         results = json;
         console.log("Received Results From Server!");
     });
-    $("#betray").click(function() {
-        if(results != null) {
+    $("#betray").on('click touchstart', function() {
+        if(results != null  && timeout == false) {
             if(game == 1) {
                 ethicalEgoism("betray");
             } else if (game == 2) {
@@ -140,8 +145,8 @@ $(document).ready(function() {
             }
         }
     });
-    $("#remainSilent").click(function() {
-        if(results != null) {
+    $("#remainSilent").on('click touchstart', function() {
+        if(results != null  && timeout == false) {
             if(game == 1) {
                 ethicalEgoism("remain silent");
             } else if (game == 2) {
