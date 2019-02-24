@@ -1,3 +1,5 @@
+//to betray or not to betray
+
 results = null;
 game = 1
 playerChoices = ["", ""];
